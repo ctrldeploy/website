@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ctrl Deploy — SOC 2, owned end to end</title>
+<meta name="description" content="From wherever you are today to a clean SOC 2 audit report. One owner, so your team stays on the product and the enterprise deal stops slipping.">
+<meta property="og:title" content="Ctrl Deploy — Your SOC 2, owned end to end">
+<meta property="og:description" content="One owner takes SOC 2 off your plate, from wherever you are to a clean audit report.">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/colors_and_type.css">
+<link rel="stylesheet" href="styles/marketing.css">
+<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--color-background); }
+  [id] { scroll-margin-top: 80px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: 4px; }
+  /* hover utilities (replace the prototype's style-hover) */
+  .cd-card { transition: box-shadow 200ms var(--ease-out), transform 200ms var(--ease-out); }
+  .cd-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+  .cd-logo { transition: opacity 150ms var(--ease-out); opacity: 0.82; }
+  .cd-logo:hover { opacity: 1; }
+  .cd-underline:hover { text-decoration: underline !important; }
+  .cd-footlink:hover { color: var(--color-foreground) !important; }
+  .cd-faqbtn { transition: background 150ms var(--ease-out); }
+  .cd-faqbtn:hover { background: var(--color-muted); }
+  .cd-mobilebar { display: none; }
+  @media (max-width: 880px) {
+    .cd-hero-grid { grid-template-columns: 1fr !important; gap: 56px !important; padding-top: 72px !important; padding-bottom: 80px !important; }
+    .cd-credential { justify-self: center; }
+    .cd-headline { font-size: 2.5rem !important; }
+    .cd-problem-grid { grid-template-columns: 1fr !important; gap: 28px !important; padding-top: 72px !important; padding-bottom: 72px !important; }
+    .cd-do-grid { grid-template-columns: 1fr !important; }
+    .cd-proof-grid { grid-template-columns: 1fr !important; }
+    .cd-where { grid-template-columns: 1fr !important; }
+    .cd-founder-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+    .cd-partner-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+    .cd-mobilebar { display: flex !important; }
+    body { padding-bottom: 78px !important; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+  }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:100;background:oklch(0.97 0.005 250 / 0.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--color-border);">
+  <div style="max-width:1080px;margin:0 auto;padding:0 32px;height:60px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+    <a href="#top" style="font-family:var(--font-mono);font-size:16px;font-weight:600;letter-spacing:-0.02em;color:var(--color-foreground);text-decoration:none;">Ctrl<span style="color:var(--color-primary);">Deploy</span></a>
+    <a href="#book" class="btn btn--sm" style="height:40px;padding:0 18px;">Book a 20-min call</a>
+  </div>
+</header>
+
+<section id="top" style="background:linear-gradient(180deg, var(--color-background) 0%, var(--color-muted) 100%);">
+  <div class="cd-hero-grid" style="max-width:1080px;margin:0 auto;padding:120px 32px 116px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:80px;align-items:center;">
+
+    <div style="min-width:0;">
+      <div style="display:inline-flex;align-items:center;gap:11px;margin-bottom:30px;">
+        <span style="width:7px;height:7px;border-radius:9999px;background:var(--color-primary);flex:none;"></span>
+        <span style="font-family:var(--font-mono);font-size:13px;font-weight:500;letter-spacing:0.005em;color:var(--color-primary);">SOC 2, handled. You focus on product-market fit.</span>
+      </div>
+
+      <h1 class="cd-headline" style="font-family:var(--font-mono);font-size:clamp(2.6rem,4.6vw,3.7rem);font-weight:600;line-height:1.06;letter-spacing:-0.028em;color:var(--color-foreground);margin:0 0 26px;max-width:13ch;">Your SOC 2, owned end to end.</h1>
+
+      <p style="font-size:19px;line-height:1.62;color:var(--color-secondary);max-width:31rem;margin:0 0 40px;">From wherever you are today to a clean audit report. One owner, so your team stays on the product and the enterprise deal stops slipping.</p>
+
+      <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:36px;">
+        <a href="#book" class="btn btn--lg">Book a 20-min call</a>
+        <div style="display:inline-flex;align-items:center;gap:11px;padding:8px 14px 8px 11px;border:1px solid var(--color-border);border-radius:6px;background:var(--color-card);box-shadow:var(--shadow-sm);">
+          <span style="display:inline-flex;align-items:center;justify-content:center;color:var(--color-success);flex:none;">
+            <i data-lucide="badge-check" style="width:18px;height:18px;"></i>
+          </span>
+          <span style="display:flex;flex-direction:column;line-height:1.2;gap:2px;">
+            <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-muted-foreground);">Verified Partner</span>
+            <img src="assets/drata.png" alt="Drata" style="display:block;height:15px;width:auto;"/>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cd-credential" style="display:flex;justify-content:center;min-width:0;">
+      <div style="position:relative;width:100%;max-width:384px;background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:28px 28px 26px;box-shadow:0 1px 2px rgba(0,0,0,0.05), 0 22px 60px var(--color-primary-ring);">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px;">
+          <span style="font-family:var(--font-mono);font-size:15px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);">SOC 2 Type II</span>
+          <span id="cred-badge"><span style="font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-primary);background:var(--color-primary-light);padding:5px 10px;border-radius:9999px;">0/5 passing</span></span>
+        </div>
+
+        <div id="cred-rows" style="display:flex;flex-direction:column;gap:8px;"></div>
+
+        <div style="height:1px;background:var(--color-border);margin:22px 0 16px;"></div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:10px;font-family:var(--font-mono);font-size:11px;letter-spacing:0.03em;color:var(--color-muted-foreground);">
+          <span>Today</span>
+          <span aria-hidden="true" style="color:var(--color-primary);">&#8594;</span>
+          <span>Controls</span>
+          <span aria-hidden="true" style="color:var(--color-primary);">&#8594;</span>
+          <span id="cred-clean" style="color:var(--color-muted-foreground);font-weight:600;transition:color 400ms var(--ease-out);">Clean report</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section style="background:var(--color-background);border-top:1px solid var(--color-border);">
+  <div style="max-width:1080px;margin:0 auto;padding:60px 32px;text-align:center;">
+    <p style="font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 auto 44px;">Trusted by teams building on AWS</p>
+    <div style="display:flex;align-items:flex-start;justify-content:center;gap:clamp(64px,11vw,128px);flex-wrap:wrap;">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+        <a href="https://security.popl.co/" target="_blank" rel="noopener" aria-label="Popl trust center" class="cd-logo" style="display:inline-flex;"><img src="assets/popl.avif" alt="Popl" style="display:block;height:21px;width:auto;"/></a>
+        <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.03em;color:var(--color-muted-foreground);">GCP to AWS, SOC 2-ready</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+        <a href="https://trust.cashmereai.com/" target="_blank" rel="noopener" aria-label="Cashmere AI trust center" class="cd-logo" style="display:inline-flex;"><img src="assets/cashmere.png" alt="Cashmere" style="display:block;height:24px;width:auto;"/></a>
+        <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.03em;color:var(--color-muted-foreground);">AI startup, full SOC 2, pentest, and audit</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--color-card);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
+  <div style="max-width:1080px;margin:0 auto;padding:96px 32px;">
+    <p style="font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 0 24px;">Where you are today</p>
+    <p style="font-family:var(--font-sans);font-size:clamp(1.5rem,2.4vw,2.05rem);line-height:1.42;letter-spacing:-0.012em;color:var(--color-secondary);margin:0;max-width:44rem;">
+      <span style="color:var(--color-foreground);">Wherever SOC 2 has you stuck today,</span>
+      <span style="color:var(--color-foreground);font-weight:600;"> you end up in the same place: a clean audit report.</span>
+    </p>
+
+    <div class="cd-where" style="margin-top:60px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;">
+
+      <div class="cd-card" style="background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:32px;box-shadow:var(--shadow-sm);">
+        <div style="width:42px;height:42px;border-radius:6px;background:var(--color-primary-light);display:flex;align-items:center;justify-content:center;color:var(--color-primary);margin-bottom:24px;">
+          <i data-lucide="compass" style="width:21px;height:21px;"></i>
+        </div>
+        <h3 style="font-family:var(--font-mono);font-size:18px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:0 0 12px;">You don't know where to start</h3>
+        <p style="font-size:15px;line-height:1.6;color:var(--color-secondary);margin:0;">You get a clear path and a single owner who runs the whole thing, from first scoping to a clean report.</p>
+      </div>
+
+      <div class="cd-card" style="background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:32px;box-shadow:var(--shadow-sm);">
+        <div style="width:42px;height:42px;border-radius:6px;background:var(--color-primary-light);display:flex;align-items:center;justify-content:center;color:var(--color-primary);margin-bottom:24px;">
+          <i data-lucide="wrench" style="width:21px;height:21px;"></i>
+        </div>
+        <h3 style="font-family:var(--font-mono);font-size:18px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:0 0 12px;">You need the controls implemented</h3>
+        <p style="font-size:15px;line-height:1.6;color:var(--color-secondary);margin:0;">Every control gets built into your systems, done right, without your engineers ever leaving the roadmap.</p>
+      </div>
+
+      <div class="cd-card" style="background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:32px;box-shadow:var(--shadow-sm);">
+        <div style="width:42px;height:42px;border-radius:6px;background:var(--color-primary-light);display:flex;align-items:center;justify-content:center;color:var(--color-primary);margin-bottom:24px;">
+          <i data-lucide="circle-check" style="width:21px;height:21px;"></i>
+        </div>
+        <h3 style="font-family:var(--font-mono);font-size:18px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:0 0 12px;">You just need it done</h3>
+        <p style="font-size:15px;line-height:1.6;color:var(--color-secondary);margin:0;">There is an enterprise deal on the line. The whole process gets owned end to end and taken to a clean report before it slips.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--color-background);">
+  <div style="max-width:1080px;margin:0 auto;padding:96px 32px;">
+    <p style="font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 0 24px;">What I do</p>
+    <p style="font-family:var(--font-sans);font-size:clamp(1.5rem,2.4vw,2.05rem);line-height:1.42;letter-spacing:-0.012em;color:var(--color-secondary);margin:0;max-width:42rem;">
+      <span style="color:var(--color-foreground);">Ctrl Deploy takes SOC 2 off your plate, end to end, from wherever you are to a clean report.</span>
+      <span style="color:var(--color-foreground);font-weight:600;"> One owner. You stop thinking about it.</span>
+    </p>
+
+    <div class="cd-do-grid" style="margin-top:60px;display:grid;grid-template-columns:repeat(2,1fr);gap:28px;">
+      <div class="cd-card" style="background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:36px;box-shadow:var(--shadow-sm);">
+        <div style="font-family:var(--font-mono);font-size:13px;font-weight:700;letter-spacing:0.1em;color:var(--color-primary);margin-bottom:22px;">01</div>
+        <h3 style="font-family:var(--font-mono);font-size:20px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:0 0 12px;">The whole process, managed.</h3>
+        <p style="font-size:15px;line-height:1.6;color:var(--color-secondary);margin:0;">Ctrl Deploy manages the compliance platform and coordinates the penetration test and the audit, fixing what they surface. One owner, from start to a clean report.</p>
+      </div>
+      <div class="cd-card" style="background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:36px;box-shadow:var(--shadow-sm);">
+        <div style="font-family:var(--font-mono);font-size:13px;font-weight:700;letter-spacing:0.1em;color:var(--color-primary);margin-bottom:22px;">02</div>
+        <h3 style="font-family:var(--font-mono);font-size:20px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:0 0 12px;">Security controls, implemented for you.</h3>
+        <p style="font-size:15px;line-height:1.6;color:var(--color-secondary);margin:0;">Done for you, in your systems, so nothing lands back on your engineers.</p>
+      </div>
+      <div class="cd-card" style="background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:36px;box-shadow:var(--shadow-sm);">
+        <div style="font-family:var(--font-mono);font-size:13px;font-weight:700;letter-spacing:0.1em;color:var(--color-primary);margin-bottom:22px;">03</div>
+        <h3 style="font-family:var(--font-mono);font-size:20px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:0 0 12px;">People and process controls, handled.</h3>
+        <p style="font-size:15px;line-height:1.6;color:var(--color-secondary);margin:0;">Onboarding, vendor risk, incident response, training. Set up for you, then yours to own.</p>
+      </div>
+      <div class="cd-card" style="background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:36px;box-shadow:var(--shadow-sm);">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;">
+          <div style="font-family:var(--font-mono);font-size:13px;font-weight:700;letter-spacing:0.1em;color:var(--color-primary);">04</div>
+          <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-primary);background:var(--color-primary-light);padding:4px 9px;border-radius:9999px;">For AI products</span>
+        </div>
+        <h3 style="font-family:var(--font-mono);font-size:20px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:0 0 12px;">The AI controls, covered.</h3>
+        <p style="font-size:15px;line-height:1.6;color:var(--color-secondary);margin:0;">The new questions enterprise security reviews ask of AI products, handled, where almost nobody else can.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--color-muted);border-top:1px solid var(--color-border);">
+  <div style="max-width:1080px;margin:0 auto;padding:96px 32px;">
+    <p style="font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 0 24px;">End-to-end coverage</p>
+    <p style="font-family:var(--font-sans);font-size:clamp(1.5rem,2.4vw,2.05rem);line-height:1.42;letter-spacing:-0.012em;color:var(--color-secondary);margin:0 0 48px;max-width:44rem;">
+      <span style="color:var(--color-foreground);">Ctrl Deploy runs the whole stack and coordinates the partners you would otherwise manage yourself.</span>
+    </p>
+
+    <div style="background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;box-shadow:var(--shadow-sm);padding:40px 40px 44px;">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;">
+        <span style="font-family:var(--font-mono);font-size:28px;font-weight:600;letter-spacing:-0.02em;color:var(--color-foreground);">Ctrl<span style="color:var(--color-primary);">Deploy</span></span>
+        <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.04em;color:var(--color-muted-foreground);">scopes, coordinates, and executes</span>
+      </div>
+      <div style="height:1px;background:var(--color-border);margin:28px 0 32px;"></div>
+      <div class="cd-partner-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;">
+
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;align-items:center;min-height:30px;">
+            <img src="assets/aws.png" alt="AWS" style="display:block;height:26px;width:auto;opacity:0.85;"/>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <p style="font-family:var(--font-mono);font-size:11px;line-height:1.55;letter-spacing:0.02em;color:var(--color-muted-foreground);margin:0;">Where your controls live.</p>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="width:5px;height:5px;border-radius:9999px;background:var(--color-primary);flex:none;"></span>
+              <span style="font-family:var(--font-mono);font-size:10.5px;font-weight:600;letter-spacing:0.03em;color:var(--color-primary);">Startup credits, applied for you</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;align-items:center;gap:18px;min-height:30px;flex-wrap:wrap;">
+            <img src="assets/vanta.png" alt="Vanta" style="display:block;height:20px;width:auto;opacity:0.82;"/>
+            <img src="assets/secureframe.png" alt="Secureframe" style="display:block;height:17px;width:auto;opacity:0.82;"/>
+            <img src="assets/onetrust.png" alt="OneTrust" style="display:block;height:16px;width:auto;opacity:0.82;"/>
+            <span style="display:inline-flex;align-items:center;gap:8px;">
+              <img src="assets/drata.png" alt="Drata" style="display:block;height:18px;width:auto;opacity:0.82;"/>
+              <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:var(--color-primary);background:var(--color-primary-light);padding:3px 7px;border-radius:9999px;">Partner</span>
+            </span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <p style="font-family:var(--font-mono);font-size:11px;line-height:1.55;letter-spacing:0.02em;color:var(--color-muted-foreground);margin:0;">The compliance platform, your choice, implemented on top.</p>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="width:5px;height:5px;border-radius:9999px;background:var(--color-primary);flex:none;"></span>
+              <span style="font-family:var(--font-mono);font-size:10.5px;font-weight:600;letter-spacing:0.03em;color:var(--color-primary);">Preferred partner rates</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;align-items:center;min-height:30px;">
+            <img src="assets/cyalpha.jpg" alt="CyAlpha" style="display:block;height:26px;width:auto;opacity:0.9;"/>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <p style="font-family:var(--font-mono);font-size:11px;line-height:1.55;letter-spacing:0.02em;color:var(--color-muted-foreground);margin:0;">Your penetration test, coordinated.</p>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="width:5px;height:5px;border-radius:9999px;background:var(--color-primary);flex:none;"></span>
+              <span style="font-family:var(--font-mono);font-size:10.5px;font-weight:600;letter-spacing:0.03em;color:var(--color-primary);">Preferred partner rates</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--color-card);border-top:1px solid var(--color-border);">
+  <div class="cd-founder-grid" style="max-width:1080px;margin:0 auto;padding:96px 32px;display:grid;grid-template-columns:380px 1fr;gap:64px;align-items:start;">
+
+    <div style="min-width:0;">
+      <div style="max-width:360px;">
+        <div style="border:1px solid var(--color-border);border-radius:6px;overflow:hidden;box-shadow:var(--shadow-sm);background:var(--color-muted);">
+          <img src="assets/founder.jpg" alt="Sanjay Shukla, founder of Ctrl Deploy" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 16%;"/>
+        </div>
+        <div style="margin-top:16px;">
+          <div style="font-family:var(--font-mono);font-size:14px;font-weight:600;color:var(--color-foreground);">Sanjay Shukla</div>
+          <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.03em;color:var(--color-muted-foreground);margin-top:3px;">Founder, Ctrl Deploy</div>
+        </div>
+        <ul style="list-style:none;padding:0;margin:30px 0 0;display:flex;flex-direction:column;gap:18px;">
+          <li style="display:flex;gap:12px;align-items:flex-start;">
+            <i data-lucide="check" style="width:16px;height:16px;color:var(--color-primary);flex:none;margin-top:3px;"></i>
+            <span style="font-size:14px;line-height:1.55;color:var(--color-secondary);">Led platform and security engineering at an AI startup. Owned the cloud, led the SOC 2.</span>
+          </li>
+          <li style="display:flex;gap:12px;align-items:flex-start;">
+            <i data-lucide="check" style="width:16px;height:16px;color:var(--color-primary);flex:none;margin-top:3px;"></i>
+            <span style="font-size:14px;line-height:1.55;color:var(--color-secondary);">Ex-Amazon Prime Video. Built production cloud infrastructure as code (AWS CDK).</span>
+          </li>
+          <li style="display:flex;gap:12px;align-items:flex-start;">
+            <i data-lucide="check" style="width:16px;height:16px;color:var(--color-primary);flex:none;margin-top:3px;"></i>
+            <span style="font-size:14px;line-height:1.55;color:var(--color-secondary);">Builds AI products, so the AI controls enterprise reviews now demand are second nature.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="min-width:0;">
+      <p style="font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 0 20px;">Who you are working with</p>
+      <h2 style="font-family:var(--font-mono);font-size:clamp(1.7rem,2.6vw,2.2rem);font-weight:600;letter-spacing:-0.02em;line-height:1.12;color:var(--color-foreground);margin:0 0 28px;max-width:18ch;">You are hiring an engineer, not a firm.</h2>
+      <p style="font-size:17px;line-height:1.68;color:var(--color-secondary);margin:0;max-width:46rem;">I am Sanjay Shukla, a senior platform and security engineer. At Cashmere, an AI startup, I led platform engineering, owned the cloud infrastructure, and took the company through SOC 2. Before that I built production cloud infrastructure at Amazon Prime Video, as code, at scale. So when an enterprise deal hangs on your SOC 2, you are not handing it to a compliance vendor that subcontracts the work. <span style="color:var(--color-foreground);font-weight:600;">You get the person who has done exactly this, in production, and who will be the one in your cloud doing it again.</span></p>
+
+      <div style="margin-top:40px;padding-top:30px;border-top:1px solid var(--color-border);">
+        <p style="font-size:16px;line-height:1.65;color:var(--color-secondary);margin:0;max-width:46rem;">I started Ctrl Deploy because I kept watching strong startups stall enterprise deals on SOC 2 and pull their best engineers off the product to fix it. I had already solved that for my own companies. <span style="color:var(--color-foreground);font-weight:600;">Now I do it for yours.</span></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section style="background:var(--color-background);border-top:1px solid var(--color-border);">
+  <div style="max-width:1080px;margin:0 auto;padding:96px 32px;">
+    <p style="font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 0 14px;">Proof</p>
+    <h2 style="font-family:var(--font-mono);font-size:clamp(1.5rem,2.4vw,2rem);font-weight:600;letter-spacing:-0.02em;color:var(--color-foreground);margin:0 0 56px;">What a clean report looks like.</h2>
+
+    <div class="cd-proof-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:28px;">
+
+      <a href="https://security.popl.co/" target="_blank" rel="noopener" aria-label="Popl trust center" class="cd-card" style="display:block;text-decoration:none;color:inherit;background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:40px;box-shadow:var(--shadow-sm);">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:30px;">
+          <img src="assets/popl.avif" alt="Popl" style="display:block;height:21px;width:auto;"/>
+          <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-muted-foreground);">Case study</span>
+        </div>
+        <p style="font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 0 10px;">Outcome</p>
+        <div style="font-family:var(--font-mono);font-size:clamp(1.7rem,2.4vw,2.2rem);font-weight:600;letter-spacing:-0.015em;line-height:1.12;color:var(--color-primary);">Ready in 2 weeks</div>
+        <p style="font-size:16px;line-height:1.62;color:var(--color-secondary);margin:24px 0 0;">Moved off GCP onto a clean, compliant AWS foundation and got SOC 2-ready.</p>
+        <div style="margin-top:28px;padding-top:24px;border-top:1px solid var(--color-border);display:flex;align-items:center;gap:7px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:0.03em;color:var(--color-primary);">View trust center<span aria-hidden="true">&#8594;</span></div>
+      </a>
+
+      <a href="https://trust.cashmereai.com/" target="_blank" rel="noopener" aria-label="Cashmere AI trust center" class="cd-card" style="display:block;text-decoration:none;color:inherit;background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:40px;box-shadow:var(--shadow-sm);">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:30px;">
+          <img src="assets/cashmere.png" alt="Cashmere" style="display:block;height:24px;width:auto;"/>
+          <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-muted-foreground);">Case study</span>
+        </div>
+        <p style="font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 0 10px;">Outcome</p>
+        <div style="font-family:var(--font-mono);font-size:clamp(1.7rem,2.4vw,2.2rem);font-weight:600;letter-spacing:-0.015em;line-height:1.12;color:var(--color-primary);">Audit-ready in 3 weeks, deal unblocked</div>
+        <p style="font-size:16px;line-height:1.62;color:var(--color-secondary);margin:24px 0 0;">An AI startup taken through full SOC 2, including the penetration test and audit, to a clean report.</p>
+        <div style="margin-top:28px;padding-top:24px;border-top:1px solid var(--color-border);display:flex;align-items:center;gap:7px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:0.03em;color:var(--color-primary);">View trust center<span aria-hidden="true">&#8594;</span></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--color-muted);border-top:1px solid var(--color-border);">
+  <div style="max-width:680px;margin:0 auto;padding:64px 32px;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+      <i data-lucide="lock" style="width:14px;height:14px;color:var(--color-secondary);"></i>
+      <p style="font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0;">The rigor behind it</p>
+    </div>
+    <p style="font-size:16px;line-height:1.65;color:var(--color-secondary);margin:0;max-width:60ch;">Under the hood, Ctrl Deploy implements the real cloud controls directly (encryption, access, logging, monitoring), and everything is documented and lives in your own systems, that you keep. If the engagement ever ends, you have <span style="color:var(--color-foreground);font-weight:600;">working infrastructure, not a black box</span>.</p>
+    <div style="margin-top:24px;font-family:var(--font-mono);font-size:11px;letter-spacing:0.03em;color:var(--color-muted-foreground);">Documented &#183; In your systems &#183; Yours to keep</div>
+    <div style="margin-top:28px;padding-top:24px;border-top:1px solid var(--color-border);">
+      <a href="https://github.com/ctrldeploy/compliance-constructs" target="_blank" rel="noopener" class="cd-underline" style="display:inline-flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:13px;font-weight:600;color:var(--color-primary);text-decoration:none;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:block;flex:none;"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.92 1.24 3.23 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+        compliance-constructs
+        <span aria-hidden="true">&#8594;</span>
+      </a>
+      <p style="font-size:13px;line-height:1.6;color:var(--color-secondary);margin:8px 0 0;max-width:56ch;">Open-source compliance as code: the reusable software and infrastructure patterns behind production systems, public so you can read exactly what runs in your cloud.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--color-background);border-top:1px solid var(--color-border);">
+  <div style="max-width:1080px;margin:0 auto;padding:96px 32px;">
+    <p style="font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 0 14px;">FAQ</p>
+    <h2 style="font-family:var(--font-mono);font-size:clamp(1.5rem,2.4vw,2rem);font-weight:600;letter-spacing:-0.02em;color:var(--color-foreground);margin:0 0 48px;">Questions you are probably asking.</h2>
+
+    <div style="max-width:760px;border:1px solid var(--color-border);border-radius:6px;overflow:hidden;background:var(--color-card);box-shadow:var(--shadow-sm);">
+
+      <div data-faq-item data-open="true" style="border-bottom:1px solid var(--color-border);">
+        <button type="button" data-faq-toggle aria-expanded="true" class="cd-faqbtn" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px;background:var(--color-card);border:none;cursor:pointer;text-align:left;font-family:var(--font-mono);font-size:16px;font-weight:600;letter-spacing:-0.005em;color:var(--color-foreground);">
+          <span>Why not just my team and a compliance tool?</span>
+          <span aria-hidden="true" style="width:18px;height:18px;flex:none;color:var(--color-primary);font-family:var(--font-mono);font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;"><span data-faq-plus style="display:none;">+</span><span data-faq-minus>&#8722;</span></span>
+        </button>
+        <div data-faq-panel style="padding:0 24px 26px;">
+          <p style="font-size:15px;line-height:1.65;color:var(--color-secondary);margin:0;max-width:62ch;">You will still use a tool. I do the part it cannot, so your best engineers stay on the roadmap, and I de-risk the audit because I know what your auditor looks for.</p>
+        </div>
+      </div>
+
+      <div data-faq-item data-open="false" style="border-bottom:1px solid var(--color-border);">
+        <button type="button" data-faq-toggle aria-expanded="false" class="cd-faqbtn" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px;background:var(--color-card);border:none;cursor:pointer;text-align:left;font-family:var(--font-mono);font-size:16px;font-weight:600;letter-spacing:-0.005em;color:var(--color-foreground);">
+          <span>You are one person. What if you disappear?</span>
+          <span aria-hidden="true" style="width:18px;height:18px;flex:none;color:var(--color-primary);font-family:var(--font-mono);font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;"><span data-faq-plus>+</span><span data-faq-minus style="display:none;">&#8722;</span></span>
+        </button>
+        <div data-faq-panel style="padding:0 24px 26px;display:none;">
+          <p style="font-size:15px;line-height:1.65;color:var(--color-secondary);margin:0;max-width:62ch;">Everything I build is documented and lives in your own systems, that you own. If I vanish, you keep working infrastructure, not a black box.</p>
+        </div>
+      </div>
+
+      <div data-faq-item data-open="false" style="border-bottom:1px solid var(--color-border);">
+        <button type="button" data-faq-toggle aria-expanded="false" class="cd-faqbtn" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px;background:var(--color-card);border:none;cursor:pointer;text-align:left;font-family:var(--font-mono);font-size:16px;font-weight:600;letter-spacing:-0.005em;color:var(--color-foreground);">
+          <span>Access to our environment?</span>
+          <span aria-hidden="true" style="width:18px;height:18px;flex:none;color:var(--color-primary);font-family:var(--font-mono);font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;"><span data-faq-plus>+</span><span data-faq-minus style="display:none;">&#8722;</span></span>
+        </button>
+        <div data-faq-panel style="padding:0 24px 26px;display:none;">
+          <p style="font-size:15px;line-height:1.65;color:var(--color-secondary);margin:0;max-width:62ch;">I am a security expert, paranoid about my own access: least-privilege, scoped, time-boxed, revoked on day one.</p>
+        </div>
+      </div>
+
+      <div data-faq-item data-open="false" style="border-bottom:1px solid var(--color-border);">
+        <button type="button" data-faq-toggle aria-expanded="false" class="cd-faqbtn" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px;background:var(--color-card);border:none;cursor:pointer;text-align:left;font-family:var(--font-mono);font-size:16px;font-weight:600;letter-spacing:-0.005em;color:var(--color-foreground);">
+          <span>How long does it take?</span>
+          <span aria-hidden="true" style="width:18px;height:18px;flex:none;color:var(--color-primary);font-family:var(--font-mono);font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;"><span data-faq-plus>+</span><span data-faq-minus style="display:none;">&#8722;</span></span>
+        </button>
+        <div data-faq-panel style="padding:0 24px 26px;display:none;">
+          <p style="font-size:15px;line-height:1.65;color:var(--color-secondary);margin:0;max-width:62ch;">Typically [X] weeks to audit-ready. Your deal has a clock, I work to it.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="book" style="background:var(--color-surface);border-top:1px solid var(--color-border);">
+  <div style="max-width:1080px;margin:0 auto;padding:96px 32px;">
+    <div style="text-align:center;max-width:720px;margin:0 auto 52px;">
+      <h2 style="font-family:var(--font-mono);font-size:clamp(1.9rem,3.2vw,2.7rem);font-weight:600;letter-spacing:-0.025em;line-height:1.12;color:var(--color-foreground);margin:0;">SOC 2, handled. You focus on product-market fit.</h2>
+      <p style="font-size:18px;line-height:1.6;color:var(--color-secondary);margin:18px auto 0;max-width:34rem;">Ctrl Deploy owns it, from wherever you are to a clean audit report.</p>
+    </div>
+
+    <div style="max-width:760px;margin:0 auto;background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;box-shadow:0 1px 2px rgba(0,0,0,0.05), 0 20px 56px var(--color-primary-ring);overflow:hidden;">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/ctrldeploy/soc2?hide_gdpr_banner=1&primary_color=3a5bd9" style="min-width:320px;height:700px;"></div>
+      <noscript>
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:56px 32px;text-align:center;">
+          <h3 style="font-family:var(--font-mono);font-size:22px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:0;">Pick a time that works.</h3>
+          <a href="https://calendly.com/ctrldeploy/soc2" class="btn btn--lg">Book a 20-min call</a>
+        </div>
+      </noscript>
+    </div>
+
+    <div style="max-width:600px;margin:40px auto 0;text-align:center;">
+      <p style="font-size:15px;line-height:1.7;color:var(--color-secondary);margin:0;">Not ready to talk? <a href="mailto:sanjay@ctrldeploy.com?subject=My%20current%20compliance%20status" class="cd-underline" style="color:var(--color-primary);font-weight:600;text-decoration:none;">Send me your current compliance status</a> and I will tell you exactly what your auditor will hit first and what it would save you. No pitch.</p>
+    </div>
+  </div>
+</section>
+
+<footer style="background:var(--color-muted);border-top:1px solid var(--color-border);">
+  <div style="max-width:1080px;margin:0 auto;padding:48px 32px;display:flex;align-items:flex-start;justify-content:space-between;gap:32px;flex-wrap:wrap;">
+    <div>
+      <div style="font-family:var(--font-mono);font-size:18px;font-weight:600;letter-spacing:-0.02em;color:var(--color-foreground);">Ctrl<span style="color:var(--color-primary);">Deploy</span></div>
+      <p style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.02em;color:var(--color-secondary);margin:10px 0 0;">Controls, deployed. Your AWS, audit-ready.</p>
+    </div>
+    <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;">
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="cd-footlink" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--color-secondary);text-decoration:none;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:block;flex:none;"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        LinkedIn
+      </a>
+      <a href="mailto:sanjay@ctrldeploy.com" class="cd-footlink" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--color-secondary);text-decoration:none;">
+        <i data-lucide="mail" style="width:16px;height:16px;"></i>
+        Email
+      </a>
+    </div>
+  </div>
+  <div style="max-width:1080px;margin:0 auto;padding:0 32px 40px;">
+    <p style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.03em;color:var(--color-muted-foreground);margin:0;">&#169; 2026 Ctrl Deploy</p>
+  </div>
+</footer>
+
+<div class="cd-mobilebar" style="position:fixed;bottom:0;left:0;right:0;z-index:200;padding:12px 16px;background:oklch(0.97 0.005 250 / 0.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--color-border);">
+  <a href="#book" class="btn btn--lg" style="width:100%;">Book a 20-min call</a>
+</div>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script src="app.js"></script>
+</body>
+</html>

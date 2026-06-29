@@ -1,0 +1,175 @@
+/* ============================================================
+   ADMT / Ctrl Deploy — Foundations
+   Colors + Typography + Spacing tokens
+   Light theme only. OKLCH for perceptual uniformity.
+
+   IBM Plex Sans + IBM Plex Mono are loaded via Google Fonts
+   (see the <link> in index.html). The font-family vars below
+   reference those families by name.
+   ============================================================ */
+
+:root {
+  /* ────────── COLOR — SURFACE ────────── */
+  --color-background:        oklch(0.97 0.005 250);  /* page bg */
+  --color-card:              oklch(0.99 0.002 250);  /* card / elevated */
+  --color-muted:             oklch(0.96 0.005 250);  /* subtle section bg */
+  --color-surface:           oklch(0.94 0.01  250);  /* deeper section bg */
+
+  /* ────────── COLOR — TEXT ────────── */
+  --color-foreground:        oklch(0.20 0.02  250);  /* headings, body */
+  --color-secondary:         oklch(0.55 0.02  250);  /* muted text */
+  --color-muted-foreground:  oklch(0.65 0.02  250);  /* placeholder, meta */
+
+  /* ────────── COLOR — BRAND PRIMARY (hue 250 deep blue) ────────── */
+  --color-primary:           oklch(0.52 0.18  250);
+  --color-primary-hover:     oklch(0.46 0.18  250);
+  --color-primary-light:     oklch(0.95 0.04  250);  /* selected/hover bg */
+  --color-primary-ring:      oklch(0.52 0.18  250 / 0.12);
+
+  /* ────────── COLOR — STATUS ────────── */
+  --color-success:           oklch(0.55 0.16  145);
+  --color-success-light:     oklch(0.95 0.04  145);
+  --color-warning:           oklch(0.65 0.16   70);
+  --color-warning-light:     oklch(0.95 0.04   70);
+  --color-danger:            oklch(0.55 0.22   25);
+  --color-danger-light:      oklch(0.95 0.04   25);
+
+  /* ────────── COLOR — BORDER ────────── */
+  --color-border:            oklch(0.87 0.01  250);
+  --color-border-strong:     oklch(0.78 0.02  250);
+
+  /* ────────── COLOR — SIDEBAR (light, never dark) ────────── */
+  --color-sidebar:             oklch(0.96 0.005 250);
+  --color-sidebar-deep:        oklch(0.94 0.01  250);
+  --color-sidebar-text:        oklch(0.55 0.02  250);
+  --color-sidebar-text-strong: oklch(0.35 0.03  250);
+
+  /* ────────── PRODUCT IDENTITY (perceptually uniform across hues) ────────── */
+  --product-avoid:   oklch(0.48 0.15 160);  /* teal — Advisor */
+  --product-assess:  oklch(0.52 0.18 250);  /* blue — Assessor (= primary) */
+  --product-train:   oklch(0.48 0.15 295);  /* purple — Trainer */
+
+  /* ────────── TYPE FAMILIES ────────── */
+  --font-sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-serif: "IBM Plex Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --font-mono:  "IBM Plex Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  /* NB: --font-serif maps to IBM Plex MONO. Do not substitute a literal serif. */
+
+  /* ────────── TYPE SCALE (rem; body 16px) ────────── */
+  --text-display:   3rem;       /* 48px — hero */
+  --text-h1:        2.25rem;    /* 36px */
+  --text-h2:        1.75rem;    /* 28px */
+  --text-h3:        1.25rem;    /* 20px — card title */
+  --text-body:      1rem;       /* 16px */
+  --text-body-sm:   0.875rem;   /* 14px */
+  --text-meta:      0.75rem;    /* 12px */
+  --text-eyebrow:   0.625rem;   /* 10px */
+
+  /* ────────── SPACING (multiples of 4px) ────────── */
+  --space-1:  0.25rem;   /* 4px  */
+  --space-2:  0.5rem;    /* 8px  */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-24: 6rem;      /* 96px */
+
+  /* ────────── RADIUS ────────── */
+  --radius:        6px;     /* canonical */
+  --radius-pill:   9999px;  /* pills, dots */
+  --radius-dialog: 12px;    /* dialogs only */
+
+  /* ────────── ELEVATION ────────── */
+  --shadow-sm:       0 1px 2px 0 rgba(0,0,0,0.05);
+  --shadow-hover:    0 4px 12px var(--color-primary-ring);
+  --shadow-floating: 0 25px 60px rgba(0,0,0,0.10), 0 8px 24px rgba(0,0,0,0.06);
+
+  /* ────────── MOTION ────────── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-instant:  100ms;
+  --duration-fast:     200ms;
+  --duration-moderate: 300ms;
+  --duration-slow:     500ms;
+
+  /* ────────── LAYOUT ────────── */
+  --max-width: 1200px;
+  --content-width: 720px;
+  --form-width: 480px;
+  --focus-ring: 2px solid var(--color-primary);
+  --focus-offset: 3px;
+}
+
+/* ============================================================
+   SEMANTIC TYPE — apply directly to elements
+   ============================================================ */
+
+html, body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.6;
+  color: var(--color-foreground);
+  background: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif); /* IBM Plex Mono */
+  color: var(--color-foreground);
+  line-height: 1.15;
+  margin: 0;
+}
+
+h1 { font-size: var(--text-h1); font-weight: 600; letter-spacing: -0.015em; }
+h2 { font-size: var(--text-h2); font-weight: 600; letter-spacing: -0.01em; }
+h3 { font-size: var(--text-h3); font-weight: 600; letter-spacing: -0.005em; }
+h4 {
+  font-size: var(--text-eyebrow);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-secondary);
+}
+
+p {
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-foreground);
+  max-width: 65ch;
+  margin: 0;
+}
+
+small, .text-meta {
+  font-size: var(--text-meta);
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+code, kbd, pre, .mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" on;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-eyebrow);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-secondary);
+}
+
+.display {
+  font-family: var(--font-serif);
+  font-size: var(--text-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* tabular numerals on anything that animates or aligns */
+.tabular { font-variant-numeric: tabular-nums; }
