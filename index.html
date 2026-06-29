@@ -73,7 +73,7 @@
 <header style="position:sticky;top:0;z-index:100;background:oklch(0.97 0.005 250 / 0.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--color-border);">
   <div style="max-width:1080px;margin:0 auto;padding:0 32px;height:60px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
     <a href="#top" style="font-family:var(--font-mono);font-size:16px;font-weight:600;letter-spacing:-0.02em;color:var(--color-foreground);text-decoration:none;">Ctrl<span style="color:var(--color-primary);">Deploy</span></a>
-    <a href="#book" class="btn btn--sm" style="height:40px;padding:0 18px;">Book a 20-min call</a>
+    <a href="https://calendly.com/ctrldeploy/soc2" target="_blank" rel="noopener" onclick="return openCalendly(event)" class="btn btn--sm" style="height:40px;padding:0 18px;">Book a 20-min call</a>
   </div>
 </header>
 
@@ -91,14 +91,14 @@
       <p style="font-size:19px;line-height:1.62;color:var(--color-secondary);max-width:31rem;margin:0 0 40px;">From wherever you are today to a clean audit report. One owner, so your team stays on the product and the enterprise deal stops slipping.</p>
 
       <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:36px;">
-        <a href="#book" class="btn btn--lg">Book a 20-min call</a>
+        <a href="https://calendly.com/ctrldeploy/soc2" target="_blank" rel="noopener" onclick="return openCalendly(event)" class="btn btn--lg">Book a 20-min call</a>
         <div style="display:inline-flex;align-items:center;gap:11px;padding:8px 14px 8px 11px;border:1px solid var(--color-border);border-radius:6px;background:var(--color-card);box-shadow:var(--shadow-sm);">
           <span style="display:inline-flex;align-items:center;justify-content:center;color:var(--color-success);flex:none;">
             <i data-lucide="badge-check" style="width:18px;height:18px;"></i>
           </span>
-          <span style="display:flex;flex-direction:column;line-height:1.2;gap:2px;">
+          <span style="display:flex;flex-direction:column;align-items:flex-start;line-height:1.2;gap:3px;">
             <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-muted-foreground);">Verified Partner</span>
-            <img src="assets/drata.png" alt="Drata" style="display:block;height:15px;width:auto;"/>
+            <img src="assets/drata.png" alt="Drata" style="display:block;height:14px;width:auto;"/>
           </span>
         </div>
       </div>
@@ -413,14 +413,13 @@
       <p style="font-size:18px;line-height:1.6;color:var(--color-secondary);margin:18px auto 0;max-width:34rem;">Ctrl Deploy owns it, from wherever you are to a clean audit report.</p>
     </div>
 
-    <div style="max-width:760px;margin:0 auto;background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;box-shadow:0 1px 2px rgba(0,0,0,0.05), 0 20px 56px var(--color-primary-ring);overflow:hidden;">
-      <div class="calendly-inline-widget" data-url="https://calendly.com/ctrldeploy/soc2?hide_gdpr_banner=1&primary_color=3a5bd9" style="min-width:320px;height:700px;"></div>
-      <noscript>
-        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:56px 32px;text-align:center;">
-          <h3 style="font-family:var(--font-mono);font-size:22px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:0;">Pick a time that works.</h3>
-          <a href="https://calendly.com/ctrldeploy/soc2" class="btn btn--lg">Book a 20-min call</a>
-        </div>
-      </noscript>
+    <div style="max-width:600px;margin:0 auto;background:var(--color-card);border:1px solid var(--color-border);border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.05), 0 20px 56px var(--color-primary-ring);padding:56px 40px;text-align:center;">
+      <div style="width:72px;height:72px;border-radius:9999px;background:var(--color-primary-light);display:flex;align-items:center;justify-content:center;color:var(--color-primary);margin:0 auto 22px;">
+        <i data-lucide="calendar-days" style="width:32px;height:32px;"></i>
+      </div>
+      <h3 style="font-family:var(--font-mono);font-size:22px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:0 0 10px;">Pick a time that works.</h3>
+      <p style="font-size:15px;line-height:1.6;color:var(--color-secondary);margin:0 auto 28px;max-width:36ch;">A 20-minute call. Straight answers, no pitch. The scheduler opens in a popup.</p>
+      <a href="https://calendly.com/ctrldeploy/soc2" target="_blank" rel="noopener" onclick="return openCalendly(event)" class="btn btn--lg">Book a 20-min call</a>
     </div>
 
     <div style="max-width:600px;margin:40px auto 0;text-align:center;">
@@ -452,7 +451,7 @@
 </footer>
 
 <div class="cd-mobilebar" style="position:fixed;bottom:0;left:0;right:0;z-index:200;padding:12px 16px;background:oklch(0.97 0.005 250 / 0.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--color-border);">
-  <a href="#book" class="btn btn--lg" style="width:100%;">Book a 20-min call</a>
+  <a href="https://calendly.com/ctrldeploy/soc2" target="_blank" rel="noopener" onclick="return openCalendly(event)" class="btn btn--lg" style="width:100%;">Book a 20-min call</a>
 </div>
 
 <script src="https://assets.calendly.com/assets/external/widget.js" async></script>

@@ -136,6 +136,18 @@
     });
   }
 
+  /* ---------- Calendly popup ---------- */
+  var CALENDLY_URL =
+    "https://calendly.com/ctrldeploy/soc2?hide_gdpr_banner=1&primary_color=3a5bd9";
+  window.openCalendly = function (e) {
+    if (window.Calendly && window.Calendly.initPopupWidget) {
+      window.Calendly.initPopupWidget({ url: CALENDLY_URL });
+      if (e && e.preventDefault) e.preventDefault();
+      return false;
+    }
+    return true; // JS/widget unavailable: fall back to the anchor href
+  };
+
   function boot() {
     initIcons();
     startEvidence();
