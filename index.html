@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="styles/colors_and_type.css">
 <link rel="stylesheet" href="styles/marketing.css">
 <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
-<script src="https://unpkg.com/lucide@latest"></script>
+<script defer src="https://unpkg.com/lucide@latest"></script>
 <style>
   html { scroll-behavior: smooth; }
   body { margin: 0; background: var(--color-background); }
@@ -94,11 +94,11 @@
         <a href="https://calendly.com/ctrldeploy/soc2" target="_blank" rel="noopener" onclick="return openCalendly(event)" class="btn btn--lg">Book a 20-min call</a>
         <div style="display:inline-flex;align-items:center;gap:11px;padding:8px 14px 8px 11px;border:1px solid var(--color-border);border-radius:6px;background:var(--color-card);box-shadow:var(--shadow-sm);">
           <span style="display:inline-flex;align-items:center;justify-content:center;color:var(--color-success);flex:none;">
-            <i data-lucide="badge-check" style="width:18px;height:18px;"></i>
+            <i aria-hidden="true" data-lucide="badge-check" style="width:18px;height:18px;"></i>
           </span>
           <span style="display:flex;flex-direction:column;align-items:flex-start;line-height:1.2;gap:3px;">
             <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-muted-foreground);">Verified Partner</span>
-            <img src="assets/drata.png" alt="Drata" style="display:block;height:14px;width:auto;"/>
+            <img loading="lazy" decoding="async" src="assets/drata.png" alt="Drata" style="display:block;height:14px;width:auto;"/>
           </span>
         </div>
       </div>
@@ -132,11 +132,11 @@
     <p style="font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 auto 44px;">Trusted by teams building in the cloud</p>
     <div style="display:flex;align-items:flex-start;justify-content:center;gap:clamp(64px,11vw,128px);flex-wrap:wrap;">
       <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
-        <a href="https://security.popl.co/" target="_blank" rel="noopener" aria-label="Popl trust center" class="cd-logo" style="display:inline-flex;"><img src="assets/popl.avif" alt="Popl" style="display:block;height:21px;width:auto;"/></a>
+        <a href="https://security.popl.co/" target="_blank" rel="noopener" aria-label="Popl trust center" class="cd-logo" style="display:inline-flex;"><img loading="lazy" decoding="async" src="assets/popl.avif" alt="Popl" style="display:block;height:21px;width:auto;"/></a>
         <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.03em;color:var(--color-muted-foreground);">GCP to AWS, SOC 2-ready</div>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
-        <a href="https://trust.cashmereai.com/" target="_blank" rel="noopener" aria-label="Cashmere AI trust center" class="cd-logo" style="display:inline-flex;"><img src="assets/cashmere.png" alt="Cashmere" style="display:block;height:24px;width:auto;"/></a>
+        <a href="https://trust.cashmereai.com/" target="_blank" rel="noopener" aria-label="Cashmere AI trust center" class="cd-logo" style="display:inline-flex;"><img loading="lazy" decoding="async" src="assets/cashmere.png" alt="Cashmere" style="display:block;height:24px;width:auto;"/></a>
         <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.03em;color:var(--color-muted-foreground);">AI startup, full SOC 2, pentest, and audit</div>
       </div>
     </div>
@@ -145,24 +145,24 @@
 
 <section style="background:var(--color-card);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
   <div style="max-width:1080px;margin:0 auto;padding:96px 32px;">
-    <p style="font-family:var(--font-sans);font-size:clamp(1.6rem,2.6vw,2.15rem);line-height:1.4;letter-spacing:-0.014em;color:var(--color-foreground);margin:0;max-width:46rem;text-wrap:balance;">Wherever SOC 2 has you stuck today, <span style="color:var(--color-primary);font-weight:600;">you end up in the same place:</span> a clean audit report.</p>
+    <h2 style="font-family:var(--font-sans);font-size:clamp(1.6rem,2.6vw,2.15rem);font-weight:400;line-height:1.4;letter-spacing:-0.014em;color:var(--color-foreground);margin:0;max-width:46rem;text-wrap:balance;">Wherever SOC 2 has you stuck today, <span style="color:var(--color-primary);font-weight:600;">you end up in the same place:</span> a clean audit report.</h2>
 
     <div class="cd-where" style="margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);">
 
       <div class="cd-spec">
-        <i data-lucide="compass" style="width:22px;height:22px;color:var(--color-primary);"></i>
+        <i aria-hidden="true" data-lucide="compass" style="width:22px;height:22px;color:var(--color-primary);"></i>
         <h3 style="font-family:var(--font-mono);font-size:17px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:18px 0 10px;">You don't know where to start</h3>
         <p style="font-size:14.5px;line-height:1.6;color:var(--color-secondary);margin:0;">You get a clear path and a single owner who runs the whole thing, from first scoping to a clean report.</p>
       </div>
 
       <div class="cd-spec">
-        <i data-lucide="wrench" style="width:22px;height:22px;color:var(--color-primary);"></i>
+        <i aria-hidden="true" data-lucide="wrench" style="width:22px;height:22px;color:var(--color-primary);"></i>
         <h3 style="font-family:var(--font-mono);font-size:17px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:18px 0 10px;">You need the controls implemented</h3>
         <p style="font-size:14.5px;line-height:1.6;color:var(--color-secondary);margin:0;">Every control gets built into your systems, done right, without your engineers ever leaving the roadmap.</p>
       </div>
 
       <div class="cd-spec">
-        <i data-lucide="circle-check" style="width:22px;height:22px;color:var(--color-primary);"></i>
+        <i aria-hidden="true" data-lucide="circle-check" style="width:22px;height:22px;color:var(--color-primary);"></i>
         <h3 style="font-family:var(--font-mono);font-size:17px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:18px 0 10px;">You just need it done</h3>
         <p style="font-size:14.5px;line-height:1.6;color:var(--color-secondary);margin:0;">There is an enterprise deal on the line. The whole process gets owned end to end and taken to a clean report before it slips.</p>
       </div>
@@ -173,7 +173,7 @@
 
 <section style="background:var(--color-background);">
   <div style="max-width:1080px;margin:0 auto;padding:96px 32px;">
-    <p style="font-family:var(--font-sans);font-size:clamp(1.6rem,2.6vw,2.15rem);line-height:1.4;letter-spacing:-0.014em;color:var(--color-foreground);margin:0;max-width:44rem;text-wrap:balance;">Ctrl Deploy takes SOC 2 off your plate, end to end, from wherever you are to a clean report. <span style="color:var(--color-primary);font-weight:600;">One owner. You stop thinking about it.</span></p>
+    <h2 style="font-family:var(--font-sans);font-size:clamp(1.6rem,2.6vw,2.15rem);font-weight:400;line-height:1.4;letter-spacing:-0.014em;color:var(--color-foreground);margin:0;max-width:44rem;text-wrap:balance;">Ctrl Deploy takes SOC 2 off your plate, end to end, from wherever you are to a clean report. <span style="color:var(--color-primary);font-weight:600;">One owner. You stop thinking about it.</span></h2>
 
     <div style="margin-top:56px;border:1px solid var(--color-border);border-radius:8px;overflow:hidden;background:var(--color-card);box-shadow:var(--shadow-sm);">
 
@@ -205,9 +205,7 @@
 </section>
 
 <section style="background:var(--color-muted);border-top:1px solid var(--color-border);">
-  <div style="max-width:1080px;margin:0 auto;padding:96px 32px;">    <p style="font-family:var(--font-sans);font-size:clamp(1.5rem,2.4vw,2.05rem);line-height:1.42;letter-spacing:-0.012em;color:var(--color-secondary);margin:0 0 48px;max-width:44rem;">
-      <span style="color:var(--color-foreground);">Ctrl Deploy runs the whole stack and coordinates the partners you would otherwise manage yourself.</span>
-    </p>
+  <div style="max-width:1080px;margin:0 auto;padding:96px 32px;">    <h2 style="font-family:var(--font-sans);font-size:clamp(1.5rem,2.4vw,2.05rem);font-weight:400;line-height:1.42;letter-spacing:-0.012em;color:var(--color-foreground);margin:0 0 48px;max-width:44rem;">Ctrl Deploy runs the whole stack and coordinates the partners you would otherwise manage yourself.</h2>
 
     <div style="background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;box-shadow:var(--shadow-sm);padding:40px 40px 44px;">
       <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;">
@@ -219,9 +217,9 @@
 
         <div style="display:flex;flex-direction:column;gap:14px;">
           <div style="display:flex;align-items:center;gap:18px;min-height:30px;flex-wrap:wrap;">
-            <img src="assets/aws.png" alt="AWS" style="display:block;height:18px;width:auto;opacity:0.85;"/>
-            <img src="assets/gcp.svg" alt="Google Cloud" style="display:block;height:17px;width:auto;opacity:0.85;"/>
-            <img src="assets/azure.svg" alt="Microsoft Azure" style="display:block;height:17px;width:auto;opacity:0.85;"/>
+            <img loading="lazy" decoding="async" src="assets/aws.png" alt="AWS" style="display:block;height:18px;width:auto;opacity:0.85;"/>
+            <img loading="lazy" decoding="async" src="assets/gcp.svg" alt="Google Cloud" style="display:block;height:17px;width:auto;opacity:0.85;"/>
+            <img loading="lazy" decoding="async" src="assets/azure.svg" alt="Microsoft Azure" style="display:block;height:17px;width:auto;opacity:0.85;"/>
           </div>
           <div style="display:flex;flex-direction:column;gap:8px;">
             <p style="font-family:var(--font-mono);font-size:11px;line-height:1.55;letter-spacing:0.02em;color:var(--color-muted-foreground);margin:0;">Where your controls live &mdash; AWS, GCP, or Azure.</p>
@@ -234,11 +232,11 @@
 
         <div style="display:flex;flex-direction:column;gap:14px;">
           <div style="display:flex;align-items:center;gap:18px;min-height:30px;flex-wrap:wrap;">
-            <img src="assets/vanta.png" alt="Vanta" style="display:block;height:20px;width:auto;opacity:0.82;"/>
-            <img src="assets/secureframe.png" alt="Secureframe" style="display:block;height:17px;width:auto;opacity:0.82;"/>
-            <img src="assets/onetrust.png" alt="OneTrust" style="display:block;height:16px;width:auto;opacity:0.82;"/>
+            <img loading="lazy" decoding="async" src="assets/vanta.png" alt="Vanta" style="display:block;height:20px;width:auto;opacity:0.82;"/>
+            <img loading="lazy" decoding="async" src="assets/secureframe.png" alt="Secureframe" style="display:block;height:17px;width:auto;opacity:0.82;"/>
+            <img loading="lazy" decoding="async" src="assets/onetrust.png" alt="OneTrust" style="display:block;height:16px;width:auto;opacity:0.82;"/>
             <span style="display:inline-flex;align-items:center;gap:8px;">
-              <img src="assets/drata.png" alt="Drata" style="display:block;height:18px;width:auto;opacity:0.82;"/>
+              <img loading="lazy" decoding="async" src="assets/drata.png" alt="Drata" style="display:block;height:18px;width:auto;opacity:0.82;"/>
               <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:var(--color-primary);background:var(--color-primary-light);padding:3px 7px;border-radius:9999px;">Partner</span>
             </span>
           </div>
@@ -253,7 +251,7 @@
 
         <div style="display:flex;flex-direction:column;gap:14px;">
           <div style="display:flex;align-items:center;min-height:30px;">
-            <img src="assets/cyalpha.jpg" alt="CyAlpha" style="display:block;height:26px;width:auto;opacity:0.9;"/>
+            <img loading="lazy" decoding="async" src="assets/cyalpha.jpg" alt="CyAlpha" style="display:block;height:26px;width:auto;opacity:0.9;"/>
           </div>
           <div style="display:flex;flex-direction:column;gap:8px;">
             <p style="font-family:var(--font-mono);font-size:11px;line-height:1.55;letter-spacing:0.02em;color:var(--color-muted-foreground);margin:0;">Your penetration test, coordinated.</p>
@@ -275,7 +273,7 @@
     <div style="min-width:0;">
       <div style="max-width:360px;">
         <div style="border:1px solid var(--color-border);border-radius:6px;overflow:hidden;box-shadow:var(--shadow-sm);background:var(--color-muted);">
-          <img src="assets/founder.jpg" alt="Sanjay Shukla, founder of Ctrl Deploy" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 16%;"/>
+          <img loading="lazy" decoding="async" src="assets/founder.jpg" alt="Sanjay Shukla, founder of Ctrl Deploy" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 16%;"/>
         </div>
         <div style="margin-top:16px;">
           <div style="font-family:var(--font-mono);font-size:14px;font-weight:600;color:var(--color-foreground);">Sanjay Shukla</div>
@@ -283,15 +281,15 @@
         </div>
         <ul style="list-style:none;padding:0;margin:30px 0 0;display:flex;flex-direction:column;gap:18px;">
           <li style="display:flex;gap:12px;align-items:flex-start;">
-            <i data-lucide="check" style="width:16px;height:16px;color:var(--color-primary);flex:none;margin-top:3px;"></i>
+            <i aria-hidden="true" data-lucide="check" style="width:16px;height:16px;color:var(--color-primary);flex:none;margin-top:3px;"></i>
             <span style="font-size:14px;line-height:1.55;color:var(--color-secondary);">Led platform and security engineering at an AI startup. Owned the cloud, led the SOC 2.</span>
           </li>
           <li style="display:flex;gap:12px;align-items:flex-start;">
-            <i data-lucide="check" style="width:16px;height:16px;color:var(--color-primary);flex:none;margin-top:3px;"></i>
+            <i aria-hidden="true" data-lucide="check" style="width:16px;height:16px;color:var(--color-primary);flex:none;margin-top:3px;"></i>
             <span style="font-size:14px;line-height:1.55;color:var(--color-secondary);">Ex-Amazon Prime Video. Built production cloud infrastructure as code (AWS CDK).</span>
           </li>
           <li style="display:flex;gap:12px;align-items:flex-start;">
-            <i data-lucide="check" style="width:16px;height:16px;color:var(--color-primary);flex:none;margin-top:3px;"></i>
+            <i aria-hidden="true" data-lucide="check" style="width:16px;height:16px;color:var(--color-primary);flex:none;margin-top:3px;"></i>
             <span style="font-size:14px;line-height:1.55;color:var(--color-secondary);">Builds AI products, so the AI controls enterprise reviews now demand are second nature.</span>
           </li>
         </ul>
@@ -316,7 +314,7 @@
 
       <a href="https://security.popl.co/" target="_blank" rel="noopener" aria-label="Popl trust center" class="cd-card" style="display:block;text-decoration:none;color:inherit;background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:40px;box-shadow:var(--shadow-sm);">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:30px;">
-          <img src="assets/popl.avif" alt="Popl" style="display:block;height:21px;width:auto;"/>
+          <img loading="lazy" decoding="async" src="assets/popl.avif" alt="Popl" style="display:block;height:21px;width:auto;"/>
           <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-muted-foreground);">Case study</span>
         </div>
         <p style="font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 0 10px;">Outcome</p>
@@ -327,7 +325,7 @@
 
       <a href="https://trust.cashmereai.com/" target="_blank" rel="noopener" aria-label="Cashmere AI trust center" class="cd-card" style="display:block;text-decoration:none;color:inherit;background:var(--color-card);border:1px solid var(--color-border);border-radius:6px;padding:40px;box-shadow:var(--shadow-sm);">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:30px;">
-          <img src="assets/cashmere.png" alt="Cashmere" style="display:block;height:24px;width:auto;"/>
+          <img loading="lazy" decoding="async" src="assets/cashmere.png" alt="Cashmere" style="display:block;height:24px;width:auto;"/>
           <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-muted-foreground);">Case study</span>
         </div>
         <p style="font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin:0 0 10px;">Outcome</p>
@@ -343,7 +341,7 @@
 <section style="background:var(--color-muted);border-top:1px solid var(--color-border);">
   <div style="max-width:680px;margin:0 auto;padding:64px 32px;">
     <div style="display:flex;align-items:center;gap:9px;margin-bottom:18px;">
-      <i data-lucide="lock" style="width:15px;height:15px;color:var(--color-primary);"></i>
+      <i aria-hidden="true" data-lucide="lock" style="width:15px;height:15px;color:var(--color-primary);"></i>
       <span style="font-family:var(--font-mono);font-size:13px;font-weight:600;letter-spacing:-0.005em;color:var(--color-foreground);">The rigor behind it</span>
     </div>
     <p style="font-size:16px;line-height:1.65;color:var(--color-secondary);margin:0;max-width:60ch;">Under the hood, Ctrl Deploy implements the real cloud controls directly (encryption, access, logging, monitoring), and everything is documented and lives in your own systems, that you keep. If the engagement ever ends, you have <span style="color:var(--color-foreground);font-weight:600;">working infrastructure, not a black box</span>.</p>
@@ -417,7 +415,7 @@
 
     <div style="max-width:600px;margin:0 auto;background:var(--color-card);border:1px solid var(--color-border);border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.05), 0 20px 56px var(--color-primary-ring);padding:56px 40px;text-align:center;">
       <div style="width:72px;height:72px;border-radius:9999px;background:var(--color-primary-light);display:flex;align-items:center;justify-content:center;color:var(--color-primary);margin:0 auto 22px;">
-        <i data-lucide="calendar-days" style="width:32px;height:32px;"></i>
+        <i aria-hidden="true" data-lucide="calendar-days" style="width:32px;height:32px;"></i>
       </div>
       <h3 style="font-family:var(--font-mono);font-size:22px;font-weight:600;letter-spacing:-0.01em;color:var(--color-foreground);margin:0 0 10px;">Pick a time that works.</h3>
       <p style="font-size:15px;line-height:1.6;color:var(--color-secondary);margin:0 auto 28px;max-width:36ch;">A 20-minute call. Straight answers, no pitch. The scheduler opens in a popup.</p>
@@ -442,7 +440,7 @@
         LinkedIn
       </a>
       <a href="mailto:sanjay@ctrldeploy.com" class="cd-footlink" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--color-secondary);text-decoration:none;">
-        <i data-lucide="mail" style="width:16px;height:16px;"></i>
+        <i aria-hidden="true" data-lucide="mail" style="width:16px;height:16px;"></i>
         Email
       </a>
     </div>
